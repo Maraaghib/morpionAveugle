@@ -1,0 +1,15 @@
+************************************************************************
+					PROJET RESEAU MORPION AVEUGLE
+************************************************************************
+
+
+
+Pour démarrer le serveur taper dans un terminal:
+	python3.5 morpion.python3
+	
+Pour se connecter en tant que joueur ou en tant que spectateur, saisir dans un autre terminal ou poste:!
+	python3.5 morpion.py [nom_de_la_machine] 
+	
+	Si c'est dans la même machine, nom_de_la_machine peut être localhost
+	
+Pour jouer, il suffit de saisir le numéro de la case où l'on veut mettre notre pion
