@@ -5,17 +5,17 @@ symbols = [' ', 'O', 'X']
 EMPTY = 0
 J1 = 1
 J2 = 2
-NB_CELLS=9
+NB_CELLS = 9
 
 class grid:
-    cells = []
+    cells = [] 
     def __init__(self):
         self.cells = []
         for i in range(NB_CELLS):
-            self.cells.append(EMPTY)
+            self.cells.append(EMPTY) # Initialiser le tableau cells à EMPTY = 0
 
     def play(self, player, cellNum):
-        assert(0<= cellNum and cellNum < NB_CELLS)
+        assert(0 <= cellNum and cellNum < NB_CELLS)
         assert(self.cells[cellNum] == EMPTY)
         self.cells[cellNum] = player
 
@@ -38,7 +38,7 @@ class grid:
 
     """ Test if 'player' wins the game"""
     def winner(self, player):
-        assert(player==J1 or player==J2)
+        assert(player == J1 or player == J2)
         # horizontal line
         for y in range(3): 
             if self.cells[y*3] == player and self.cells[y*3+1] == player and self.cells[y*3+2] == player:
@@ -62,6 +62,6 @@ class grid:
         if self.winner(J2):
             return J2
         for i in range(NB_CELLS):
-            if(self.cells[i]== EMPTY):
+            if(self.cells[i] == EMPTY):
                 return -1
         return 0
