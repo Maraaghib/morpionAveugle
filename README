@@ -2,7 +2,8 @@
 					PROJET RESEAU MORPION AVEUGLE
 ************************************************************************
 
-
+Ce projet est dans le cadre du l'UE Réseau en Licence 2 à l'Unoiversité de Bordeaux.
+Son objectif est de réaliser en binômes un jeu de morpion aveugle en réseau.
 
 Pour démarrer le serveur taper dans un terminal:
 	python3.5 morpion.python3
